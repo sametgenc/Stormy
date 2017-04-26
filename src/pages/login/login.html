@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="whatsapp">
+    <ion-title>Giriş</ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button class="done-button" (click)="login()">Bitti</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding class="login-page-content">
+  <div class="instructions">
+    <div>
+      Lütfen telefon numaranızı ülke koduyla birlikte girin.
+    </div>
+    <br>
+    <div>
+      Telefon numaranızı doğrulamak için bir kerelik bir SMS mesajı gönderilecektir. Taşıyıcı SMS ücretleri uygulanabilir.
+    </div>
+  </div>
+ 
+  <ion-item>
+    <ion-input [(ngModel)]="phone" (keypress)="onInputKeypress($event)" type="tel" placeholder="Telefon Numaranız"></ion-input>
+  </ion-item>
+</ion-content>

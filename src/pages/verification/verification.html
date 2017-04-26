@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="whatsapp">
+    <ion-title>Verification</ion-title>
+ 
+    <ion-buttons end>
+      <button ion-button class="verify-button" (click)="verify()">Verify</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding class="verification-page-content">
+  <div class="instructions">
+    <div>
+      Doğrulama kodunu içeren bir SMS mesajı {{phone}} numarasına gönderilmiştir.
+    </div>
+    <br>
+    <div>
+      Devam etmek için lütfen aşağıya 4 haneli doğrulama kodunu giriniz.
+    </div>
+  </div>
+ 
+  <ion-item>
+    <ion-input [(ngModel)]="code" (keypress)="onInputKeypress($event)" type="tel" placeholder="Doğrulama Kodu"></ion-input>
+  </ion-item>
+</ion-content>
