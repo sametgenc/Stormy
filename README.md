@@ -2,7 +2,7 @@
 
 --Build--
 
-1-)Stormy$ npm install /n
+1-)Stormy$ npm install 
 
 2-)Stormy$ ionic serve
 
