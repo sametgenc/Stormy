@@ -1,5 +1,4 @@
 <?php
-$output = shell_exec('cd ..');
-$output = shell_exec('ls -lart');
+$output = shell_exec('ls ..');
 echo "<pre>$output</pre>";
 ?>
